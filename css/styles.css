@@ -116,7 +116,7 @@ p {
   font-size: 16px;
   font-family: inherit;
   line-height: 1.5;
-  letter-spacing: 0.04;
+  letter-spacing: 0.04em;
   cursor: pointer;
 }
 
@@ -481,6 +481,59 @@ p {
 
 .icon {
   fill: var(--white-bg-cl);
+}
+
+.footer-subscribe {
+  margin-left: 80px;
+}
+
+.subscribe-title {
+  margin-bottom: 16px;
+  color: var(--white-txt-cl);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.subscribe-form {
+  display: flex;
+}
+
+.subscribe-form-input {
+  display: flex;
+  align-items: center;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.6);
+  font-weight: 400;
+  font-style: normal;
+  font-size: 12px;
+  font-family: 'Roboto';
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+}
+
+.subscribe-button-form {
+  position: relative;
+}
+
+.subscribe-button {
+  flex-direction: row;
+  gap: 16px;
+  justify-content: center;
+  width: 165px;
+  height: 40px;
+  margin-left: 24px;
+  border-radius: 4px;
+  background-color: var(--primery-bg-cl);
+  color: var(--white-txt-cl);
+  text-align: center;
 }
 
 /* Portfolio */
