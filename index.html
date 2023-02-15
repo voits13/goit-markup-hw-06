@@ -399,8 +399,8 @@
             </div>
         </div>
     </footer>
-    <!-- is-hidden -->
-    <div class="backdrop " data-modal>
+
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="modal-close-btn btn" data-modal-close type="button">
                 <svg class="modal-close-btn-icon" width="8" height="8">
@@ -409,7 +409,7 @@
             </button>
             <strong class="modal-title">Leave your contacts and we will call you back</strong>
             <form class="order-form" name="order_form">
-                <label class="order-form-label" for="user_name">Nane</label>
+                <label class="order-form-label" for="user_name">Name</label>
                 <div class="order-form-group">
                     <input class="order-form-input" id="user_name" name="user_name" type="text">
                     <svg class="order-form-icon" width="18" height="18">
@@ -418,14 +418,14 @@
                 </div>
                 <label class="order-form-label" for="user_phone">Phone</label>
                 <div class="order-form-group">
-                    <input class="order-form-input" id="user_phone" name="user_phone" type="text">
+                    <input class="order-form-input" id="user_phone" name="user_phone" type="tel">
                     <svg class="order-form-icon" width="18" height="24">
                         <use href="./images/symbol-defs.svg#icon-phone"></use>
                     </svg>
                 </div>
-                <label class="order-form-label" for="user_email">Email</label>
+                <label class="order-form-label" for="user_mail">Email</label>
                 <div class="order-form-group">
-                    <input class="order-form-input" id="user_email" name="user_email" type="text">
+                    <input class="order-form-input" id="user_mail" name="user_mail" type="text">
                     <svg class="order-form-icon" width="18" height="24">
                         <use href="./images/symbol-defs.svg#icon-email"></use>
                     </svg>
@@ -435,7 +435,13 @@
                 </textarea>
                 <div class="form-field_checkbox">
                     <label class="modal-label_checkbox">
-                        <input class="modal-input_checkbox visually-hidden" type="checkbox" name="user agreement">
+                        <input class="form-checkbox visually-hidden" id="agreement" name="agreement" type="checkbox"
+                            value="I accept the terms and conditions of the">
+                        <span class="form-desc">I accept the terms and conditions of the
+                            <a class="form-policy-link link" href="#">Privacy Policy</a>
+                        </span>
+                        <button class="order-form-btn btn" type="submit">Send</button>
+
                     </label>
 
                 </div>
